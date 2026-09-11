@@ -35,4 +35,17 @@ Used the available Chromium-based in-app browser against the production build.
 - Dynamic renderer, viewport gating, bounded pixel ratio, local light sources/environment, and explicit cleanup.
 - Native phone/tablet scrolling and photograph fallbacks. Reduced-motion handling is implemented through media queries in JS/CSS and matching GSAP contexts; no forced camera or smooth scroll in that mode.
 
-No Lighthouse score is asserted. Native Safari and physical-device testing were unavailable; the implementation uses broadly supported CSS, native dialog, WebGL, and reduced-motion features with fallbacks. Live deployment verification is recorded separately when publication completes.
+No Lighthouse score is asserted. Native Safari and physical-device testing were unavailable; the implementation uses broadly supported CSS, native dialog, WebGL, and reduced-motion features with fallbacks.
+
+## Published deployment
+
+The public repository is [Pushker-Gera/aurelia-mithai](https://github.com/Pushker-Gera/aurelia-mithai). Vercel imports that repository as a Next.js project and serves [aurelia-mithai.vercel.app](https://aurelia-mithai.vercel.app).
+
+- The Vercel deployment completed successfully.
+- `node scripts/check-routes.mjs https://aurelia-mithai.vercel.app`: all route, image, metadata, and both form-endpoint checks pass.
+- The public canonical origin resolves correctly to the Vercel production domain.
+- Live desktop and 390px phone layouts were visually inspected. The phone document measures exactly 390px wide, with no WebGL canvases on initial load.
+- Live mobile navigation and collection details open and work correctly.
+- A live product enquiry submitted successfully and displayed the explicit demo confirmation; no details were sent or stored.
+- The public desktop gift-box scene rendered with its separated lid and all six sweets. No console warnings or errors were captured after the interaction.
+- Desktop and phone opening screenshots in this repository were captured from the published site.

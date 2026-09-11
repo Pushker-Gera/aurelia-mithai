@@ -4,6 +4,8 @@
 
 An original, cinematic portfolio experience for a fictional luxury Indian confectionery house. Editorial typography, original campaign imagery, procedural 3D sweets, and considered motion bring traditional mithai into a contemporary luxury setting.
 
+[View the live experience](https://aurelia-mithai.vercel.app) · [GitHub repository](https://github.com/Pushker-Gera/aurelia-mithai)
+
 This is a complete showcase website, including a six-product collection, interactive product details, a scroll-driven brand film, a craft narrative, gifting, journal articles, and validated enquiry and newsletter flows. It is not a functioning sweet shop: there is no checkout, payment processing, or real brand affiliation.
 
 ## Experience
@@ -93,7 +95,7 @@ lib/                    Content, validation, form delivery, site configuration
 public/images/          Ten optimized, self-contained WebP assets
 public/fonts/           Local WOFF2 fonts and their OFL licenses
 scripts/                Route verification and original asset processing
- docs/                  Asset prompts, QA notes, screenshots
+docs/                   Asset prompts, QA notes, screenshots
 ```
 
 ## Performance and accessibility
